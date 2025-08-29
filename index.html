@@ -8,19 +8,99 @@
 </head>
 <body class="font-serif m-0 p-0 bg-yellow-100 text-black">
     <!-- Header Section -->
-    <header class="bg-green-600 text-white text-center p-20">
+    <header class="bg-green-600 text-white text-center p-20 mb-6">
         <h1>My Recent Trip to <b>Mahakumbh</b></h1>
         <p>Recently, I visited Mahakumbh along with Varanasi and Ayodhya.</p>
         <!-- Navigation Menu -->
-        <nav>
-            <ul class="list-none p-0 bg-green-300 flex justify-center py-14">
-                <li><a class="text-white decoration-0 font-medium" href="#prayagraj">Prayagraj</a></li>
-                <li><a  class="text-white decoration-0 font-medium"href="#varanasi">Varanasi</a></li>
-                <li><a class="text-white decoration-0 font-medium" href="#ayodhya">Ayodhya</a></li>
-                <li><a class="text-white decoration-0 font-medium" href="#about">About</a></li>
-                <li><a class="text-white decoration-0 font-medium" href="#contact">Contact</a></li>
+        <nav> 
+            <ul class="list-none p-0 bg-green-300 flex justify-center gap-6 py-3">
+                <li><a class="list" href="#prayagraj">Prayagraj</a></li>
+                <li><a class="list" href="#varanasi">Varanasi</a></li>
+                <li><a class="list" href="#ayodhya">Ayodhya</a></li>
+                <li><a class="list" href="#about">About</a></li>
+                <li><a class="list" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-</body>
+    <!-- Mahakumbh Section -->
+    <section id="mahakumbh" class="max-w-5xl mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Mahakumbh</h2>
+        <p class="text-lg leading-relaxed">The journey to the Mahakumbh was a spiritual and awe-inspiring experience. The grand spectacle, colorful processions, and spiritual discourses were truly remarkable.</p>
+    </section>
+    <!-- Prayagraj Section -->
+    <section id="prayagraj" class="max-w-5xl mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Prayagraj</h2>
+        <ul class="list-disc pl-6 space-y-2">
+            <li>One of the oldest and most significant religious cities in India.</li>
+            <li>Home to the Triveni Sangam, where the Ganga, Yamuna, and Saraswati rivers meet.</li>
+            <li>The Kumbh Mela, held every 12 years, draws millions of pilgrims.</li>
+            <li>Visit the historic Allahabad Fort built by Emperor Akbar.</li>
+            <li>Explore Anand Bhavan, the ancestral home of the Nehru family.</li>
+        </ul>
+        <div class="mt-6 flex flex-col items-start gap-4">
+            <img src="images/prayagraj.jpeg" alt="A scenic view of Prayagraj during Mahakumbh" class="w-72 max-w-full h-auto rounded-lg shadow">
+            <video controls src="video/prayagraj.mp4" class="w-full max-w-xl rounded-lg shadow"></video>
+        </div>
+    </section>
+    <!--Varanasi Section-->
+    <section id="varanasi" class="max-w-5xl mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Varanasi</h2>
+        <ul class="list-disc pl-6 space-y-2">
+            <li>One of the oldest continuously inhabited cities in the world.</li>
+            <li>Famous for its ghats along the Ganges River and the grand Ganga Aarti.</li>
+            <li>Experience the mesmerizing sunrise boat ride on the Ganges.</li>
+            <li>Discover the rich heritage at the Banaras Hindu University.</li>
+            <li>Visit the Kashi Vishwanath Temple, an iconic pilgrimage site.</li>
+        </ul>
+        <div class="mt-6 flex flex-col items-start gap-4">
+            <img src="images/varanasi.jpeg" alt="" class="w-full max-w-xl rounded-lg shadow">
+            <video controls src="video/Varanasi.mp4" class="w-full max-w-xl rounded-lg shadow"></video>
+        </div>
+    </section>
+    <!--Ayodhya Section-->
+    <section id="ayodhya" class="max-w-5xl mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Ayodhya</h2>
+        <ul class="list-disc pl-6 space-y-2">
+            <li>Birthplace of Lord Rama and an important religious city.</li>
+            <li>Home to the Ram Janmabhoomi and several ancient temples.</li>
+            <li>Witness the beautiful Saryu River and its evening aarti.</li>
+            <li>Explore Hanuman Garhi, an important temple dedicated to Lord Hanuman.</li>
+            <li>Learn about the city’s history at the Ayodhya Research Institute.</li>
+        </ul>
+        <div class="mt-6 flex flex-col items-start gap-4">
+            <img src="images/ayodhya.jpeg" alt="" class="w-full max-w-xl rounded-lg shadow">
+            <video controls src="video/ayodhya.mp4" class="w-full max-w-xl rounded-lg shadow"></video>
+        </div>
+    </section>
+        <!-- About Me Section -->
+    <section id="about" class="max-w-5xl mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">About Me</h2>
+        <p class="text-lg leading-relaxed">Hi, I'm Yashodhan Ramteke. I created this blog to share my passion for travel and adventure!<br>
+        Currently, I'm learning Full Stack Development from Internshala.<br>
+        I hope my stories, photos, and tips inspire you to explore new places and create unforgettable experiences. Thanks for visiting!</p>
+    </section>
+     <!-- Contact Section -->
+    <section id="contact" class="max-w-5xl mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-green-800 mb-6">Contact Me</h2>
+        <form class="bg-white rounded-lg shadow p-6 space-y-4">
+            <div class="flex flex-col">
+                <label for="name" class="mb-1 font-medium text-green-900">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="border border-green-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" />
+            </div>
+            <div class="flex flex-col">
+                <label for="email" class="mb-1 font-medium text-green-900">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="border border-green-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" />
+            </div>
+            <div class="flex flex-col">
+                <label for="message" class="mb-1 font-medium text-green-900">Message</label>
+                <textarea id="message" rows="5" placeholder="Enter your message" class="border border-green-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+            </div>
+            <button type="submit" class="inline-flex items-center justify-center bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">Submit</button>
+        </form>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-green-600 text-white text-center py-6 mt-10">
+        <p>&copy; 2025 Yashodhan Ramteke. All rights reserved.</p>
+    </footer>               
+    </body>
 </html>

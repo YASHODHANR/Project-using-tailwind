@@ -1,1 +1,4 @@
 ﻿@import "tailwindcss";
+.list {
+    @apply px-3 py-2 rounded-md text-green-900 hover:bg-green-400 hover:text-green-950 transition 
+}
