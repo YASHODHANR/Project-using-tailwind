@@ -2,3 +2,73 @@
 .list {
     @apply px-3 py-2 rounded-md text-green-900 hover:bg-green-400 hover:text-green-950 transition 
 }
+
+/* Mobile First - Base styles (default) */
+@media (max-width: 639px) {
+    .list {
+        @apply px-2 py-1 text-sm;
+    }
+}
+
+/* Small screens (sm) - 640px and up */
+@media (min-width: 640px) {
+    .list {
+        @apply px-3 py-2 text-base;
+    }
+}
+
+/* Medium screens (md) - 768px and up */
+@media (min-width: 768px) {
+    .list {
+        @apply px-4 py-3 text-lg;
+    }
+}
+
+/* Large screens (lg) - 1024px and up */
+@media (min-width: 1024px) {
+    .list {
+        @apply px-6 py-4 text-xl;
+    }
+}
+
+/* Extra large screens (xl) - 1280px and up */
+@media (min-width: 1280px) {
+    .list {
+        @apply px-8 py-5 text-2xl;
+    }
+}
+
+/* 2XL screens - 1536px and up */
+@media (min-width: 1536px) {
+    .list {
+        @apply px-10 py-6 text-3xl;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) and (max-height: 500px) {
+    .list {
+        @apply py-1;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .list {
+        @apply font-medium;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .list {
+        @apply text-green-100 hover:bg-green-600 hover:text-green-50;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .list {
+        @apply transition-none;
+    }
+}
